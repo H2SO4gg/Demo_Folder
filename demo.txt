@@ -1,0 +1,171 @@
+tudent@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder
+$ git --version
+git version 2.46.2.windows.1
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder
+$ git config --global user.name H2SO4gg
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder
+$ git config --global user.email shawonalam504@gmail.com
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder
+$ git config --global --list
+user.name=H2SO4gg
+user.email=shawonalam504@gmail.com
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder
+$ git .
+git: '.' is not a git command. See 'git --help'.
+
+The most similar commands are
+        am
+        gc
+        mv
+        p4
+        rm
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder
+$ ^C
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder
+$ git init
+Initialized empty Git repository in C:/Users/student/Desktop/Demo_Folder/.git/
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git add .
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Box.java
+        new file:   Start.java
+
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git commit -m "Demo Feature"
+[master (root-commit) 1ee9859] Demo Feature
+ 2 files changed, 53 insertions(+)
+ create mode 100644 Box.java
+ create mode 100644 Start.java
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git remote add origin https://github.com/H2SO4gg/Demo_Folder.git
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git push -u origin master
+remote: Permission to H2SO4gg/Demo_Folder.git denied to Shithil12.
+fatal: unable to access 'https://github.com/H2SO4gg/Demo_Folder.git/': The requested URL returned error: 403
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/H2SO4gg/Demo_Folder.git'
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git push -u origin master
+remote: Permission to H2SO4gg/Demo_Folder.git denied to Shithil12.
+fatal: unable to access 'https://github.com/H2SO4gg/Demo_Folder.git/': The requested URL returned error: 403
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git config --global user.name "H2SO4gg"
+git config --global user.email "shawonalam504@gmail.com"
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$  git config --global --list
+user.name=H2SO4gg
+user.email=shawonalam504@gmail.com
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git add .
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git remote add origin https://github.com/H2SO4gg/Demo_Folder.git
+error: remote origin already exists.
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git push -u origin master
+remote: Permission to H2SO4gg/Demo_Folder.git denied to Shithil12.
+fatal: unable to access 'https://github.com/H2SO4gg/Demo_Folder.git/': The requested URL returned error: 403
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git credential-manager-core erase
+git: 'credential-manager-core' is not a git command. See 'git --help'.
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ ls -al ~/.ssh
+ls: cannot access '/c/Users/student/.ssh': No such file or directory
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ rm ~/.ssh/id_rsa ~/.ssh/id_rsa.pub
+rm: cannot remove '/c/Users/student/.ssh/id_rsa': No such file or directory
+rm: cannot remove '/c/Users/student/.ssh/id_rsa.pub': No such file or directory
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git remote remove origin
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git config --global user.name "H2SO4gg"
+git config --global user.email "shawonalam504@gmail.com"
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git remote add origin https://github.com/H2SO4gg/Demo_Folder.git
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git push -u origin master
+remote: Permission to H2SO4gg/Demo_Folder.git denied to Shithil12.
+fatal: unable to access 'https://github.com/H2SO4gg/Demo_Folder.git/': The requested URL returned error: 403
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$  git config --global user.name "H2SO4gg"
+git config --global user.email "shawonalam504@gmail.com"
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$  git remote add origin https://github.com/H2SO4gg/Demo_Folder.git
+error: remote origin already exists.
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git push -u origin master
+remote: Permission to H2SO4gg/Demo_Folder.git denied to Shithil12.
+fatal: unable to access 'https://github.com/H2SO4gg/Demo_Folder.git/': The requested URL returned error: 403
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git push -u origin master
+remote: Permission to H2SO4gg/Demo_Folder.git denied to Shithil12.
+fatal: unable to access 'https://github.com/H2SO4gg/Demo_Folder.git/': The requested URL returned error: 403
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git push -u origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 686 bytes | 137.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/H2SO4gg/Demo_Folder.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+student@DESKTOP-MPUH97H MINGW64 ~/Desktop/Demo_Folder (master)
+$ git push -u origin master
