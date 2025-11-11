@@ -1,0 +1,59 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+bool isKeyword(const string &word) {
+    // List of common C++ reserved keywords
+    string keywords[] = {"int", "float", "double", "char", "static", "public", "string", "return"};
+    int numKeywords = sizeof(keywords) / sizeof(keywords[0]);
+    
+    for (int i = 0; i < numKeywords; i++) {
+        if (word == keywords[i]) return true;
+    }
+    return false;
+}
+
+bool isLetter(char ch) {
+    return (ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z');
+}
+
+bool isDigit(char ch) {
+    return (ch >= '0' && ch <= '9');
+}
+
+bool isValidVariable(const string &var) {
+    if (var.empty()) return false;
+
+    // Rule 1: Starts with a digit
+    if (isDigit(var.at(0))) {
+        return false;
+    }
+
+    // Rule 2: Matches a reserved keyword
+    if (isKeyword(var)) {
+        return false;
+    }
+
+    // Rule 3: Contains invalid characters
+    for (int i = 0; i < var.length(); i++) {
+        char ch = var.at(i);
+        if (!(isLetter(ch) || isDigit(ch) || ch == '_' || ch == '$')) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+int main() {
+    string varName;
+    cout << "Enter a variable name: ";
+    cin >> varName;
+
+    if (isValidVariable(varName))
+        cout << "Valid variable name ✅" << endl;
+    else
+        cout << "Invalid variable name ❌" << endl;
+
+    return 0;
+}
